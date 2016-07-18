@@ -1,9 +1,14 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-// components
-var MainComponent = require('./components/MainComponent.js');
+// Load foundation
+require('foundation-sites/dist/foundation.min.css');
+$(document).foundation();
 
-var name = "Codemzy";
+// Load own css
+require('./styles/styles.scss');
 
-ReactDOM.render(<MainComponent name={name} message="This is a React BoilerPlate" />, document.getElementById('app'));
+// routes
+var routes = require('./config/router');
+
+ReactDOM.render(routes, document.getElementById('app'));

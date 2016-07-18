@@ -26,7 +26,7 @@ class GreeterForm extends React.Component {
                 <form onSubmit={this._onFormSubmit.bind(this)}>
                     <div><input type="text" placeholder="Your name" ref="name" /></div>
                     <div><textarea placeholder="Your message..." ref="message"></textarea></div>
-                    <div><button>Update</button></div>
+                    <div><button className="hollow expanded button">Update</button></div>
                 </form>
             </div>
         );

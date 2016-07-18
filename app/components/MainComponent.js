@@ -43,8 +43,8 @@ class MainComponent extends React.Component {
 }
 
 MainComponent.defaultProps = {
-    name: "React",
-    message: "This is from the component."
+    name: "Codemzy",
+    message: "This is a React BoilerPlate."
 };
 
 module.exports = MainComponent;
